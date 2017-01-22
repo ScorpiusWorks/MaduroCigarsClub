@@ -1,0 +1,8 @@
+# www.robotstxt.org/
+
+# 
+
+User-agent: *
+
+Disallow: /process.php
+Disallow: /phpinfo.php

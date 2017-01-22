@@ -1,0 +1,95 @@
+html{height:100%;}
+*{margin:0;padding:0;}
+body{font:normal 1em 'trebuchet ms', arial, sans-serif;background:url(../style/images/red_wood.jpg);}
+p{padding:5px 0 5px 0;line-height:1.5em;color:#bc9f61;}
+h1, h2, h3, h4, h5, h6{margin:5px 0 0 0;padding:10px 0 0px 0;}
+h1{font:bold 1.5em 'century gothic', arial, sans-serif;color:#bc9f61;}
+h2{font:bold 1.35em 'century gothic', arial, sans-serif;color:#bc9f61;}
+h3{font:bold 1.20em 'century gothic', arial, sans-serif;color:#bc9f61;}
+h4, h5, h6{margin:0;padding:0 0 5px 0;font:normal 1.2em arial, sans-serif;color:#bc9f61;}
+h5, h6{font:bold 0.95em arial, sans-serif;color:#bc9f61;}
+h5{padding-top:5px;}
+h6{color:#bc9f61;}
+a{outline:none;text-decoration:none;color:#bc9f61;}
+a:hover{text-decoration:underline;}
+blockquote{margin:20px 0;padding:10px 20px 0 20px;border:1px solid #E5E5DB;background:#FFF;}
+ul{margin:2px 0 22px 17px;}
+ul li{list-style-type:circle;margin:0 0 6px 0;padding:0 0 4px 5px;}
+ol{margin:8px 0 22px 20px;color:#bc9f61;}
+ol li{margin:0 0 11px 0;}
+.left{float:left;width:auto;margin-right:10px;}
+.right{float:right;width:auto;margin-left:10px;}
+.center{display:block;text-align:center;margin:20px auto;}
+#main, #header, #wrapper, #logo_maduro, #behike, #menubar, #site_content, #footer{margin-left:auto;margin-right:auto;}
+#main{padding:20px;}
+#header{height:205px;}
+#wrapper{width:90%;max-width:900px;height:180px;margin:0 auto;padding-bottom:10px;}
+#menubar{width:90%;min-height:42px;max-width:900px;padding:0 0 0 0px;}
+ul#menu{float:right;margin:0;padding:0;}
+ul#menu li{float:left;padding:0px 6px;list-style:none;margin:3px 2px 0 0;}
+ul#menu li a{font:normal 1em 'lucida sans unicode', sans-serif;display:block;float:left;padding:5px 22px 5px 22px;border:1px solid #bc9f61;text-align:center;color:#bc9f61;text-decoration:none;}
+ul#menu li.selected{background:#bc9f61;}
+ul#menu li.selected a, ul#menu li.selected a:hover{background:#bc9f61;color:#111;}
+ul#menu li a:hover{text-decoration:underline;}
+#site_content{width:90%;max-width:900px;overflow:hidden;margin:0 auto 0 auto;padding:15px 10px 10px 20px;border:10px solid #bc9f61;}
+#index_content{width:98%;max-width:1024px;overflow:hidden;margin:0 auto;border:10px solid #bc9f61;}
+#image_slider{width:100%;margin:0 auto;}
+.sidebar{float:right;width:20%;padding:0 5px 10px 10px;}
+.sidebar ul{padding:4px 0 0 0;margin:4px 0 10px 0;color:#bc9f61}
+.sidebar li{list-style:none;padding:0 0 7px 0;}
+.sidebar li a, .sidebar li a:hover{padding:0 0 0 35px;display:block;background:transparent url(../style/images/link.png) no-repeat left center;font-size:1em;}
+.momente li,{margin-left:20px;list-style-type:disc;}
+.momente li a, .momente li a:hover{background:none;padding:0px;}
+#content{text-align:left;width:75%;min-height:480px;overflow:auto;padding-right:10px;border-right:1px solid #bc9f61;}
+#content ul{margin:2px 0 22px 0px;color:#bc9f61;}
+#content ul li{list-style-type:none;background:url(../style/images/bullet.png) no-repeat;margin:0 0 0 0;padding:0 0 4px 25px;line-height:1.5em;}
+#footer{width:90%;font-family:'trebuchet ms', sans-serif;font-size:1em;height:45px;padding:20px 0 5px 0;text-align:center;background:transparent;color:#EEF3CD;text-transform:uppercase;letter-spacing:0.1em;}
+#footer p{padding:0;}
+#footer a, #footer a:hover{color:#bc9f61;text-decoration:none;font-size:1em;}
+#footer a:hover{text-decoration:underline;}
+#logo_maduro{float:left;width:22%;margin:10px;}
+#logo_maduro img{border:0;max-height:100%;max-width:100%;}
+#trabuc{float:right;width:70%;height:136px;}
+#trabuc img{margin-top:25px;max-width:100%;}
+#cuts_wrapper{height:140px;}
+#perfect_cut{margin:0px 50px;float:left;}
+#wrong_cut{margin:0;float:left;}
+#v_cut{margin-left:50px;margin-bottom:15px;}
+#punch_cut{margin-left:50px;margin-bottom:15px;}
+#contact-form{width:450px;padding:20px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;position:relative;}
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label{font-size:1.2em;margin-bottom:3px;}
+#contact-form input,
+#contact-form select,
+#contact-form textarea{width:450px;border:1px solid #CEE1E8;margin-bottom:20px;padding:4px;}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus{border:1px solid #bc9f61;background-color:#EBF2F4;}
+#contact-form textarea{height:150px;resize:none;}
+#contact-form label{color:#bc9f61;display:block;}
+#contact-form .required{font-weight:bold;color:#F00;}
+#contact-form #submit-button{width:100px;background-color:transparent;color:#bc9f61;border:1px solid #bc9f61;display:block;float:right;margin-bottom:0px;margin-right:6px;-moz-border-radius:8px;}
+#contact-form #submit-button:hover{background-color:#bc9f61;border:1px solid #bc9f61;color:black;cursor:pointer;cursor:hand;}
+#contact-form #submit-button:active{position:relative;top:1px;}
+#contact-form #loading{width:32px;height:32px;background-image:url(../style/images/loading.gif);display:block;position:absolute;right:130px;bottom:16px;display:none;}
+#errors{border:solid 1px #E58E8E;padding:10px;margin:25px 0px;display:block;width:437px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background:#FFE6E6 url(../style/images/cancel_48.png) no-repeat 405px center;display:none;}
+#errors li{padding:2px;list-style:none;}
+#errors li:before{content:' - ';}
+#errors #info{font-weight:bold;}
+#errors #info:before{content:'';}
+#success{border:solid 1px #83D186;padding:25px 10px;margin:25px 0px;display:block;width:437px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background:#D3EDD3 url(../style/images/accepted_48.png) no-repeat 405px center;font-weight:bold;display:none;}
+#errors.visible, #success.visible{display:block;}
+#req-field-desc{font-style:italic;}
+input:required, textarea:required{-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;box-shadow:none;}
+::-webkit-input-placeholder{color:#CCC;font-style:italic;}
+input:-moz-placeholder, textarea:-moz-placeholder{color:#CCC;font-style:italic;}
+input.placeholder-text, textarea.placeholder-text{color:#CCC;font-style:italic;}
+@media only screen
+and (min-device-width:320px)
+and (max-device-width:780px){.sidebar{display:none;}
+#content{width:100%;border-right:none;}
+ul#menu li a{font-size:1em;}
+#footer a {font-size:1em;}
+}

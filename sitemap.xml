@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.madurocigarsclub.ro/</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/index.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/despre.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/trabucuri.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/evenimente.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/evenimente/aniversare-anuala-maduro-cigars-club-iunie-2015-maria-rustic-resort-cuied.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/evenimente/aniversare-maduro-cigars-club-decembrie-2014-hotel-president.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>http://www.madurocigarsclub.ro/contact.php</loc>
+  <lastmod>2016-08-03T05:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>
