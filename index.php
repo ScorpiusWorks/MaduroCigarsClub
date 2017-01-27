@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html> 
+<html>
 
 <head>
   <title>Maduro Cigars Club Arad</title>
@@ -26,23 +26,25 @@
 
 <body>
   <div id="main">
+    <!-- include header-nav.php -->
     <?php $currentPage = 'index'; require 'includes/header-nav.php'; ?>
     <div id="index_content">
-        <!--start-image-slider-->
-		<div id="image_slider">
-		  <!-- Slideshow 1 -->
-		  <ul class="rslides" id="slider1">
-            <li><img src="style/slider/Davidoff_and_scissors.jpg" alt="Davidoff_and_scissors"></li>
-			<li><img src="style/slider/cigars_and_cognac.jpg" alt="cigars_and_cognac"></li>
-            <li><img src="style/slider/Bourbon_And_Cohiba.jpg" alt="Bourbon_And_Cohiba"></li>
-            <li><img src="style/slider/habana_cigars.jpg" alt="habana_cigars"></li>
-            <li><img src="style/slider/Handmade_cigars.jpg" alt="Handmade_cigars"></li>
-<!--			<li><img src="/style/slider/cigar_boxes.jpg" alt="cigar_boxes"></li>-->
-			<li><img src="style/slider/Kristoff1.jpg" alt="Kristoff cigars"></li>
-          </ul>
-        </div>
-	    <!--End-image-slider-->
+      <!--start-image-slider-->
+  		<div id="image_slider">
+  		  <!-- Slideshow 1 -->
+  		  <ul class="rslides" id="slider1">
+          <li><img src="style/slider/Davidoff_and_scissors.jpg" alt="Davidoff_and_scissors"></li>
+  	      <li><img src="style/slider/cigars_and_cognac.jpg" alt="cigars_and_cognac"></li>
+          <li><img src="style/slider/Bourbon_And_Cohiba.jpg" alt="Bourbon_And_Cohiba"></li>
+          <li><img src="style/slider/habana_cigars.jpg" alt="habana_cigars"></li>
+          <li><img src="style/slider/Handmade_cigars.jpg" alt="Handmade_cigars"></li>
+  <!--			<li><img src="/style/slider/cigar_boxes.jpg" alt="cigar_boxes"></li>-->
+  	      <li><img src="style/slider/Kristoff1.jpg" alt="Kristoff cigars"></li>
+        </ul>
+      </div>
+  	  <!--End-image-slider-->
     </div>
+    <!-- include footer -->
     <?php include 'includes/footer.php'; ?>
   </div>
 </body>
