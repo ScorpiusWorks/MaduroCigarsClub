@@ -1,0 +1,33 @@
+name: 🚀 Deploy Astro spre cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Construieste si incarca
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Preia ultimul cod
+        uses: actions/checkout@v4
+
+      - name: 📦 Instaleaza mediul Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 🔨 Construieste site-ul Astro
+        run: |
+          npm install
+          npm run build
+
+      - name: 📂 Sincronizare prin FTP pe cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: /public_html
