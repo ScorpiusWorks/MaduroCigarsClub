@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Despre Noi – Maduro Cigars Club Arad"
+  description="Scurt istoric și principiile Maduro Cigars Club Arad. Fondat în 26 mai 2010 ca o aventură a bunului gust și a hedonismului temperat."
+>
+  <div class="container">
+    <header class="page-header">
+      <div class="badge-gold">Scurt Istoric & Principii</div>
+      <h1>Despre Maduro Cigars Club</h1>
+      <p class="page-lead">
+        „O aventură a bunului gust și a hedonismului temperat începută în mai 2010 la Arad.”
+      </p>
+    </header>
+
+    <div class="content-layout">
+      <!-- Main Narrative Column -->
+      <div class="main-narrative">
+        <article class="speakeasy-card narrative-card">
+          <h2>Bun venit pe pagina Maduro Cigars Club!</h2>
+          
+          <p>
+            În <strong>26 mai 2010</strong>, porneam într-o aventură a bunului gust și a hedonismului temperat. Inițial, trei arădeni s-au adunat pe o terasă din centrul orașului, ca să guste trabucuri, să schimbe impresii, să contemple un oraș frumos, cu oameni frumoși.
+          </p>
+
+          <p>
+            Această inițiativă a atras mai mulți amatori ai acestei culturi alternative. Lună de lună, alți și alți pasionați și începători deopotrivă, își petreceau serile de joi explorând trabucuri alese din marile regiuni producătoare ale lumii – Republica Dominicană, Nicaragua, Honduras, Cuba și multe altele. Și, pentru că această inițiativă lua amploare, am format un club: <strong>Maduro Cigars Club Arad</strong>.
+          </p>
+
+          <blockquote>
+            „Maduro Cigars Club este o inițiativă culturală. Constă într-un grup itinerant de domni, doamne și domnișoare care împărtășesc o pasiune comună, cea pentru trabucuri.”
+          </blockquote>
+
+          <p>
+            În interiorul clubului este binevenit oricine, după o perioadă de probă, bineînțeles. În clubul nostru <strong>nu se face propagandă politică sau religioasă</strong>. Încurajăm schimbul sănătos de idei, încurajăm afacerile și activitățile culturale și filantropice.
+          </p>
+
+          <p>
+            În prezent, ne mândrim cu un număr de peste <strong>30 de membri cotizanți</strong>, plus o mulțime de aspiranți; ne mândrim cu faptul că am reușit să organizăm evenimente de-a dreptul deosebite, degustări comparative și întâlniri speciale cu invitați pasionați.
+          </p>
+
+          <div class="vision-box">
+            <h3>Ce urmează?</h3>
+            <p>
+              În mod cert, noi degustări ghidate, explorând diversitatea fascinantă a regiunilor producătoare (Republica Dominicană, Nicaragua, Honduras, Cuba, SUA, Mexic), întâlniri săptămânale, dialoguri inteligente, muzică bună și noi prieteni.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sidebar / Values & Milestones -->
+      <aside class="sidebar-col">
+        <!-- Principles Card -->
+        <div class="speakeasy-card side-card">
+          <h3 class="side-title">Principiile Clubului</h3>
+          <ul class="principles-list">
+            <li>
+              <strong>Pasiune Autentică</strong>
+              <span>Aprecierea trabucurilor premium, a aromelor complexe și a diversității marilor terroir-uri ale lumii.</span>
+            </li>
+            <li>
+              <strong>Neutralitate Totală</strong>
+              <span>Fără discuții partizane, propagandă politică sau religioasă.</span>
+            </li>
+            <li>
+              <strong>Networking Sănătos</strong>
+              <span>Încurajarea colaborărilor profesionale, afacerilor și inițiativelor filantropice.</span>
+            </li>
+            <li>
+              <strong>Hedonism Temperat</strong>
+              <span>Savurarea momentului prezent cu moderație, decență și respect reciproc.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Meeting Note Card -->
+        <div class="speakeasy-card side-card">
+          <h3 class="side-title">Întâlnirile de Joi</h3>
+          <p class="side-p">
+            Tradiția clubului Maduro constă în serile de joi, petrecute în locații selecte sau itinerante, dedicate degustărilor și dezbaterilor amicale.
+          </p>
+          <a href="/contact" class="btn btn-outline w-full" style="width: 100%; text-align: center;">
+            Solicită Participarea &rarr;
+          </a>
+        </div>
+
+        <!-- Useful Links Card -->
+        <div class="speakeasy-card side-card">
+          <h3 class="side-title">Linkuri Utile Aficionado</h3>
+          <ul class="useful-links">
+            <li><a href="https://cigaraficionado.com" target="_blank" rel="noopener noreferrer">Cigar Aficionado ↗</a></li>
+            <li><a href="https://halfwheel.com" target="_blank" rel="noopener noreferrer">Halfwheel – Cigar News ↗</a></li>
+            <li><a href="https://cigarjournal.com" target="_blank" rel="noopener noreferrer">Cigar Journal ↗</a></li>
+            <li><a href="http://cigars-review.org" target="_blank" rel="noopener noreferrer">Cigars Review ↗</a></li>
+            <li><a href="http://cubancigarwebsite.com" target="_blank" rel="noopener noreferrer">Cuban Cigar Website ↗</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 5rem;
+  }
+
+  .narrative-card {
+    padding: 3rem;
+  }
+
+  .narrative-card h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-box {
+    margin-top: 2.5rem;
+    padding: 1.75rem;
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-sm);
+    background: rgba(198, 168, 124, 0.04);
+  }
+
+  .sidebar-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .side-card {
+    padding: 2rem;
+  }
+
+  .side-title {
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-gold);
+  }
+
+  .side-p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .principles-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .principles-list strong {
+    display: block;
+    color: var(--accent-gold-light);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+  }
+
+  .principles-list span {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .useful-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .useful-links a {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    transition: var(--transition-smooth);
+    display: inline-block;
+  }
+
+  .useful-links a:hover {
+    color: var(--accent-gold-light);
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 900px) {
+    .content-layout {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .narrative-card {
+      padding: 2rem;
+    }
+  }
+</style>
+

@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const events = await getCollection('evenimente');
+const sortedEvents = events.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<Layout
+  title="Evenimente & Galerie – Maduro Cigars Club Arad"
+  description="Evenimente organizate de Maduro Cigars Club Arad sau reuniuni în care clubul a fost partener: aniversări, degustări și seri speciale."
+>
+  <div class="container">
+    <header class="page-header">
+      <div class="badge-gold">Arhiva & Galerie Foto</div>
+      <h1>Evenimente Maduro Cigars Club</h1>
+      <p class="page-lead">
+        Reuniuni, aniversări anuale și degustări tematice care au marcat istoria clubului nostru din 2010 până în prezent.
+      </p>
+    </header>
+
+    <div class="events-list">
+      {sortedEvents.map((event) => (
+        <article class="speakeasy-card event-row-card">
+          <div class="event-cover-container">
+            <img src={event.data.coverImage} alt={event.data.title} loading="lazy" />
+            <div class="event-badge-overlay">
+              {new Date(event.data.date).toLocaleDateString('ro-RO', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </div>
+          </div>
+
+          <div class="event-content-col">
+            <div class="event-meta">
+              <span class="meta-location">📍 {event.data.location || 'Arad, România'}</span>
+              <span class="meta-gallery-count">📷 {event.data.gallery.length} fotografii</span>
+            </div>
+
+            <h2>
+              <a href={`/evenimente/${event.id}`} class="event-title-link">
+                {event.data.title}
+              </a>
+            </h2>
+
+            <p class="event-excerpt">
+              {event.data.description || "Descoperă galeria foto și impresiile de la această întâlnire a clubului Maduro."}
+            </p>
+
+            <div class="event-actions">
+              <a href={`/evenimente/${event.id}`} class="btn btn-gold">
+                Vizualizează Galeria Foto &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+
+      <!-- Notice box from original site -->
+      <div class="update-notice-card">
+        <h3>Lista în curs de actualizare! 🍸</h3>
+        <p>
+          Adăugăm periodic imagini și consemnări din arhiva serilor noastre de joi și a degustărilor speciale cu selecții din marile regiuni producătoare (Republica Dominicană, Nicaragua, Honduras, Cuba, Mexic etc.).
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .event-row-card {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .event-cover-container {
+    position: relative;
+    height: 240px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border-gold);
+  }
+
+  .event-cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .event-row-card:hover .event-cover-container img {
+    transform: scale(1.05);
+  }
+
+  .event-badge-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-gold);
+    color: var(--accent-gold-light);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.78rem;
+    font-family: var(--font-heading);
+    letter-spacing: 0.05em;
+  }
+
+  .event-content-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .event-title-link {
+    color: var(--accent-gold-light);
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+  }
+
+  .event-title-link:hover {
+    color: var(--accent-gold);
+  }
+
+  .event-excerpt {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .update-notice-card {
+    background: rgba(198, 168, 124, 0.04);
+    border: 1px dashed var(--border-gold-strong);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  .update-notice-card h3 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .update-notice-card p {
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 860px) {
+    .event-row-card {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .event-cover-container {
+      height: 220px;
+    }
+  }
+</style>
+
