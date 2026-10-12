@@ -1,0 +1,10 @@
+# Caching files for Maduro Cigars Club
+# One week for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+
+# One week for css and js also
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
