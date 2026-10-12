@@ -2,6 +2,7 @@ backend:
   name: github
   repo: ScorpiusWorks/MaduroCigarsClub
   branch: main
+  app_id: Ov23liWZRMxvYySh4MBR
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
